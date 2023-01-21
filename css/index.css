@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(253, 253, 253);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    z-index: 2;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(37, 35, 35);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+}
+
+
+.h-logo{
+    margin: 25px 10px;
+    color: rgb(165, 72, 251);
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+}
+
+.navigation li{
+    /* margin: 30px 20px;
+    padding: 3px 15px; */
+    display: flex;
+    
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px 9px;
+    display: block;
+}
+.navigation li a:hover{
+    color: black;
+    background-color: azure;
+    border-radius: 0.8rem;
+    
+}
+
+#home{
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 200px; */
+    height: 450px;
+    opacity: 1;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/bg4.jpg') center center/cover;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+#home .btn{
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    height: 35px;
+    width: 90px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-style: none;
+}
+
+#home .btn:hover{
+    background-color: rgb(255, 175, 26);
+    color: black;
+    
+
+}
+
+/* .home::before{
+    content: "";
+    background-color: black;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+} */
+
+#services{
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#service-container{
+    display: flex;
+    /* border: 3px solid red; */
+    
+}
+.card img{
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+.card{
+    /* display: flex;
+    flex-direction: column; */
+    border: 3px solid rgb(255, 184, 71);
+    /* height: 400px;
+    width: 800px; */
+    margin: 30px 60px;
+    border-radius: 1.5rem;
+    background-color: rgb(214, 255, 241);
+    cursor: pointer;
+    z-index: -1;
+}
+
+.card p{
+    padding: 20px;
+}
+
+#clientsection{
+    position: relative;
+    font-family: 'Fuzzy Bubbles', cursive;
+   
+  
+}
+#clientsection::before{
+    content: "";
+    background: url('../img/bg4.jpg') center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+}
+.client{
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+.clientitem img{
+    height: 120px;
+    width: 200px;
+    margin: 5px 25px;
+}
+
+#contact{
+    font-family: 'Fuzzy Bubbles', cursive;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('../img/bg4.jpg');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+    
+}
+
+.contactbox{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.contactbox input,textarea{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    border-color: azure;
+    cursor: pointer;
+}
+.contactbox button{
+    background-color: black;
+    color: azure;
+    width: 320px;
+    border-radius: 0.6rem;
+    border-color: azure;
+}
+
+.contactbox label{
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 14px;
+}
